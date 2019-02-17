@@ -1,2 +1,21 @@
 // Import build configs for JVM-based projects
 apply from: "${ext.CONFIGS}/jvm.gradle"
+
+/*
+===============================================================
+UNCOMMENT THE CODE BELOW IF YOUR APPLICATION HAS AN ENTRY POINT
+===============================================================
+
+apply plugin: 'application'
+
+mainClassName = "{YOUR MAIN CLASS}"
+
+task executableFatJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+    baseName = 'executableFatJar'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+*/
