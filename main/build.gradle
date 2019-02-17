@@ -17,6 +17,7 @@ task executableFatJar(type: Jar) {
     zip64 = true
     baseName = 'executableFatJar'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    exclude ('META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA')
     with jar
 }
 */
