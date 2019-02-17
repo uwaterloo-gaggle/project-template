@@ -1,5 +1,5 @@
 buildscript {
-    apply from: "https://raw.githubusercontent.com/uwaterloo-gaggle/gradle-config/dev/buildscript.gradle", to: buildscript
+    apply from: "https://raw.githubusercontent.com/uwaterloo-gaggle/gradle-config/master/buildscript.gradle", to: buildscript
 }
 
-apply from: "https://raw.githubusercontent.com/uwaterloo-gaggle/gradle-config/dev/core.gradle"
+apply from: "https://raw.githubusercontent.com/uwaterloo-gaggle/gradle-config/master/core.gradle"
