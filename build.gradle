@@ -2,4 +2,10 @@ buildscript {
     apply from: "https://raw.githubusercontent.com/uwaterloo-gaggle/gradle-config/master/buildscript.gradle", to: buildscript
 }
 
+// TODO Move to gradle-config/core.gradle once https://github.com/gradle/gradle/issues/1262 is fixed
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.21' apply false
+    id 'org.jetbrains.kotlin.kapt' version '1.3.21' apply false
+}
+
 apply from: "https://raw.githubusercontent.com/uwaterloo-gaggle/gradle-config/master/core.gradle"

@@ -1,1 +1,2 @@
+// Import build configs for JVM-based projects
 apply from: "${ext.CONFIGS}/jvm.gradle"
