@@ -14,7 +14,7 @@ task executableFatJar(type: Jar) {
     manifest {
         attributes 'Main-Class': mainClassName
     }
-    useZip64 = true
+    zip64 = true
     baseName = 'executableFatJar'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
