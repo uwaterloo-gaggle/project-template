@@ -8,6 +8,13 @@ You are on your way to creating a new gaggle project! A few more steps remain:
 - MacOS/Linux/UNIX: `./gradlew build`
 - Windows: `gradlew.bat build`
 
+### Producting a "fat jar"
+Use the commands below to produce a single JAR containing both your program code an it's dependencies:
+- MacOS/Linux/UNIX: `./gradlew main:fatJar`
+- Windows: `gradlew.bat main:fatJar`
+
+**This is the command to run when packaging your program for execution on Spark**
+
 ## Application modules
 If you have a large project, it is recommended to split your project into modules.
 
